@@ -72,7 +72,8 @@ export default {
         const images = new Array();
         for (let i = 0; i < 40; i++) {
           const weatherIcon = res2.data.list[i].weather[0].icon;
-          images[i] = `src/assets/images/${weatherIcon}.png`;
+          //   images[i] = `src/assets/images/${weatherIcon}.png`;
+          images[i] = `https://github.com/hmm365/vuestudy/blob/master/src/assets/images/${weatherIcon}.png?raw=true`;
         }
         console.log(res.data);
         context.commit('SET_IMAGEPATH', images);
@@ -84,3 +85,5 @@ export default {
     },
   },
 };
+
+//https://github.com/hmm365/vuestudy/blob/master/src/assets/images/01d.png?raw=true
