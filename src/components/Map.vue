@@ -27,7 +27,7 @@ export default {
       let mapContainer = document.getElementById('map'); // 지도를 표시할 div
       let mapOption = {
         center: new kakao.maps.LatLng(37.5683, 126.9778), // 지도의 중심좌표(중앙역)
-        level: 7, // 지도의 확대 레벨
+        level: 5, // 지도의 확대 레벨
       };
       let map = new kakao.maps.Map(mapContainer, mapOption);
       const positions = MapPositions.map((pos) => ({
